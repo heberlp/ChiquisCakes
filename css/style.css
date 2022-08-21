@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*Navegacion*/
+header{
+    position: sticky;
+    top: 0%;
+}
+/**Navegador Principal**/
+.menuPrincipal{
+    height: 70px;
+    background-color:#ffeeebc5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-wrap: wrap;
+}
+.menu{
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+}
+.Titulo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    padding-right: 140px;
+}
+.Titulo a{
+    color: black;
+    text-decoration: none;
+}
+.menuDos{
+    font-family:  'Jost', sans-serif;
+}
+.menuDos a{
+    color: black;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 15px;
+}
+.menuDos a img{
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+}
+/**Foto inicio**/
+.fotosInicio{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/FOTOINICO.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+/*Lo mas destacados*/
+.TituloDestac {
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin: 20px 0 20px 0;
+}
+.imagenes_venta{
+    font-family: 'Jost',sans-serif;
+    font-size: 15px;
+}
+.imagenes_venta div img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+.imagenes_venta{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.articulos{
+    margin: 10px 30px 10px 30px;
+    text-align: center;
+    border: 3px solid;
+    border-color: #FFEEEB;
+    padding: 15px;
+    border-radius: 15px;
+}
+.articulos a{
+    text-decoration: none;
+    color: black;
+}
+.vermas{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.vermas div a{
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    background-color: #FF9584;
+    color: white;
+    font-size: 17px;
+    border: 2px solid;
+    border-color: #FF9584;
+    padding: 10px;
+    border-radius: 5px;
+}
+/** Seccion Mapa y varios**/
+.lasMejores{
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+.nosUbicamos{
+    font-family: 'Jost', sans-serif;
+    margin-left: 35px;
+}
+.info_adc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mapa iframe{
+    width: 300px;
+    height: 300px;
+    margin: 10px 35px 10px 35px;
+}
+.envios_pago{
+    display: flex;
+    font-family: 'Jost', sans-serif;
+    background-color:#FF9584;
+    color: white;
+    width: 900px;
+    height: 250px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+.info_adc_div{
+    display: flex;
+    justify-content: space-between;
+}
+.info_adc_div h3{
+    padding: 10px;
+
+}
+.info_adc_div img{
+    padding: 10px;
+}
+/**Pie de Pagina**/
+.footer{
+    background-color: #FFB8AD ;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Jost', sans-serif;
+    overflow: hidden;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+.contacto{
+    margin: 10px;
+}
+.lista_dos li{
+    list-style: none;
+}
+.lista_dos li a{
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+}
+.redesSociales{
+    display: flex;
+    justify-content:start;
+}
+.redsocial img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.medios_pago h4{
+    text-align: center;
+}
+.medios_pago div img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.form_consulta p{
+    background-color: white;
+    color: gray;
+    border: 1px solid;
+    border-radius: 2px;
+
+}
+/**Inicio Tienda**/
+.fotoProductos{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    background-image: url("./../img/Torta-chocolate.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/**Main Productos**/
+.productos{
+    display: flex;
+    justify-content: center;
+}
+/**Categorias Tienda**/
+.categorias{
+    width: 20%;
+    margin: 10px 20px 10px 20px;
+}
+.categorias ul{
+    list-style: none;
+}
+.categorias h3{
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+}
+.categorias h4{
+    display: inline-block;
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+    margin: 10px;
+    padding: 15px;
+}
+.categorias a{
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.categorias ul li{
+    padding-top: 10px;
+    padding-left: 40px;
+}
+/**Articulo menu productos**/
+.articulos_main{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.articulo_productos{
+    display: inline-block;
+    width: 200px;
+}
+.articulo_productos span{
+    border: 2px solid;
+    background-color: #FF9584;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.articulo_productos a img{
+    width: 180px;
+    height: 180px;
+
+}
+.productos_texto h3{
+    font-family: 'Jost', sans-serif;
+}
+.articulo_productos{
+    font-family: 'Jost', cursive;
+    margin: 10px 30px 10px 30px;
+    text-align: center;
+    border-color: rgb(197, 197, 197);
+    padding: 15px;
+}
+.articulo_productos a img{
+    border: 2px solid;
+    border-color: white;
+    border-radius: 10px;
+}
+.articulo_productos a{
+    text-decoration: none;
+    color: black;
+}
+.paginas_productos{
+    display: flex;
+    justify-content: center;
+}
+.paginas_productos a{
+    font-family: 'Jost', sans-serif;
+    color: rgb(63, 62, 62);
+    padding: 10px;
+}
+/**Inicio Sesion**/
+.titulo_iniciosesion{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+.form_iniciosesion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    align-items: center;
+    padding: 20px;
+}
+.form_iniciosesion article{
+    width: 320px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 6px;
+    border-color: rgb(136, 132, 132);
+}
+.olvidaste-crear{
+    display: flex;
+    justify-content: center;
+    font-family: 'Jost',sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 100px;
+}
+.olvidaste-crear a{
+    color: black;
+}
+.boton-inicio{
+    display: flex;
+    font-family: 'Jost', sans-serif;
+    justify-content: center;
+    margin: 10px 0 40px 0;
+}
+.boton-inicio a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: #FF9584;
+}
+/**Encabezado Tienda**/
+.variable_shop{
+    display: flex;
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.variable_shop h4{
+    text-align: center;
+    width: 150px;
+    border-bottom: 1px solid;
+}
+/**Carrito**/
+.carrito_compra {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.carrito_compra a{
+    color: rgb(70, 68, 68);
+    padding-top: 20px;
+}
+.text_shoprecom{
+    font-family: 'Jost',sans-serif;
+    font-size: 20px;
+    margin-left: 35px;
+}
+/**Recomendado Carrito**/
+.productos_recomendados{
+    display: flex;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.productos_recomendados a{
+    text-decoration: none;
+    color: black;
+}
+.productos_recomendados div {
+    padding: 15px;
+    border: 2px solid;
+    color: rgb(179, 178, 178);
+    border-radius: 5px;
+}
+.productos_recom_items a img{
+    width: 150px;
+    height: 150px;
+}
+.textos_arrepentimiento h2{
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.textos_arrepentimiento h3{
+    display: inline-block;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+    ;
+    border-bottom: 1px solid;
+    border-color: black;
+}
+/**Boton Arrepentimiento**/
+.texto_arr_2 p{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jost', sans-serif;
+    margin: 15px 0 15px 0px;
+    padding: 0 10px 0 10px;
+}
+.form_arrp{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jost', sans-serif;
+    padding: 10px;
+    justify-content: center;
+}
+.form_arrp span{
+    width: 75%;
+    height: 25px;
+    border: 2px solid;
+}
+.enviar_soli{
+    display: flex;
+    justify-content: center;
+    
+}
+.enviar_soli a{
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: black;
+    padding: 10px;
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+/**Sobre mi**/
+.foto_titulo{
+    display: flex;
+    font-family: 'Dancing Script',cursive;
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/Sobremi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+}
+.Sobre{
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.parrafo_sobre p{
+    margin: 10px 70px 0px 70px;
+    font-family: 'Jost',sans-serif;
+}
+.parrafo_sobre h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 30px;
+
+}
+/**Galeria**/
+.info_gallery{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.info_gallery h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    justify-content: center;
+    margin: 30px 0px 30px 0px;
+}
+.info_gallery h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    justify-content: center;
+    margin: 30px 0px 5px 0px;
+}
+.cont_frutosrojos{
+    height: 400px;
+    width: 1000px;
+    margin: 5px 0 0 0;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr) ;
+    grid-template-areas: 
+        "frutos1 frutos2 frutos3 frutos4"
+        "frutos1 frutos5 frutos6 frutos7";
+}
+.caja{
+    margin: 10px;
+    border: transparent solid;
+    border-radius: 15px;
+}
+.frutos1{
+    display: flex;
+    grid-area: frutos1;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../img/background-textgrid.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.frutos1 h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.308) 2px 2px 2px;
+}
+.frutos1 p{
+    font-family: 'Jost', sans-serif;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    text-shadow: rgba(124, 124, 124, 0.795) 2px 2px 2px;
+}
+.frutos2{
+    grid-area: frutos2;
+    background-image: url(../img/grid_frutos2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.frutos3{
+    grid-area: frutos3;
+    background: url(../img/grid_frutos3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.frutos4{
+    grid-area: frutos4;
+    background: url(../img/grid_frutos4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.frutos5{
+    grid-area: frutos5;
+    background: url(../img/grid_frutos5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.frutos6{
+    grid-area: frutos6;
+    background: url(../img/grid_frutos6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.frutos7{
+    grid-area: frutos7;
+    background: url(../img/grid_frutos7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.desayunos{
+    height: 400px;
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: repeat(2, 1fr) ;
+    grid-template-areas:
+    "box1 box2 box3 box4 box5"
+    "box6 box6 box6 box6 box6" ;
+}
+.boxes{
+    margin: 5px;
+    border: transparent solid;
+    border-radius: 15px;
+}
+.box1{
+    grid-area: box1;
+    background-image: url(../img/desayunos_grid1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.box2{
+    grid-area: box2;
+    background-image: url(../img/desayuno_grid2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.box3{
+    grid-area: box3;
+    background-image: url(../img/desayunos_grid3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.box4{
+    grid-area: box4;
+    background-image: url(../img/desayuno_grid4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.box5{
+    grid-area: box5;
+    background-image: url(../img/desayuno_grid5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.box6{
+    color: white;
+    grid-area: box6;
+    background-image: url(../img/desayuno_grid6.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box6 h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    text-align: center;
+    padding-top: 20px;
+}
+/**Media QUERIES**/
+@media screen and (max-width: 480px) {
+    .menuPrincipal{
+        display: flex, none;
+        flex-direction: column-reverse;
+    }
+    .Titulo{
+        padding: 0px 0px 0px 100px;
+    }
+    .menuDos a{
+        padding: 0px;
+    }
+    .imagenes_venta div img{
+        width: 140px;
+        height: 140px;
+    }
+    .lasMejores{
+        font-size: 18px;
+    }
+    .nosUbicamos{
+        text-align: center;
+    }
+    .info_adc{
+        justify-content: center;
+    }
+    .envios_pago{
+        margin: 0px;
+    }
+    .footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .medios_pago h4{
+        text-align: start;
+    }
+    .variable_shop{
+        justify-content: center;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .carrito_compra{
+        height: 300px;
+    }
+    .productos_recomendados{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .productos_recom_items a img{
+        height: 100px;
+        width: 100px;
+    }
+}
