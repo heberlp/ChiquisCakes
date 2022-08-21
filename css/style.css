@@ -9,6 +9,7 @@
 header{
     position: sticky;
     top: 0%;
+    z-index: 1;
 }
 /**Navegador Principal**/
 .menuPrincipal{
@@ -54,15 +55,31 @@ header{
     width: 25px;
     margin-top: 5px;
 }
+.menu_item_uno{
+    transition: all 1s;
+}
+.menu_item_uno:hover{
+    color: rgb(143, 143, 143);
+}
+.menu_item_dos{
+    transition: all 1s;
+}
+.menu_item_dos:hover{
+    color: rgb(143, 143, 143) ;
+}
 /**Foto inicio**/
 .fotosInicio{
+    top: 0%;
     width: 100%;
     height: 600px;
     background-image: url(../img/FOTOINICO.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
+    transition: all 2s;
+}
+.fotosInicio:hover{
+    transform: scale(1.04);
 }
 
 /*Lo mas destacados*/
@@ -94,6 +111,11 @@ header{
     border-color: #FFEEEB;
     padding: 15px;
     border-radius: 15px;
+    transition: 0.5s;
+}
+.articulos:hover{
+    transform: scale(1.1) translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .articulos a{
     text-decoration: none;
@@ -105,6 +127,10 @@ header{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+.vermas div a:hover{
+    background-color: #ff7c67;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 .vermas div a{
     font-family: 'Jost', sans-serif;
     text-decoration: none;
@@ -112,9 +138,10 @@ header{
     color: white;
     font-size: 17px;
     border: 2px solid;
-    border-color: #FF9584;
+    border-color: transparent;
     padding: 10px;
     border-radius: 5px;
+    transition: all 0.3s;
 }
 /** Seccion Mapa y varios**/
 .lasMejores{
@@ -209,10 +236,11 @@ header{
 }
 /**Inicio Tienda**/
 .fotoProductos{
+    display: flex;
     width: 100%;
     height: 350px;
     background-color: black;
-    background-image: url("./../img/Torta-chocolate.jpg");
+    background-image: url("./../img/Sobremi.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -246,6 +274,10 @@ header{
     text-decoration: none;
     color: black;
 }
+.categorias a:hover{
+    color: rgb(31, 31, 31);
+
+}
 .categorias ul li{
     padding-top: 10px;
     padding-left: 40px;
@@ -260,6 +292,15 @@ header{
 .articulo_productos{
     display: inline-block;
     width: 200px;
+    transition: all .3s;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 15px;
+}
+.articulo_productos:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 }
 .articulo_productos span{
     border: 2px solid;
@@ -267,6 +308,11 @@ header{
     color: white;
     padding: 3px;
     border-radius: 10px;
+    transition: 1s;
+}
+.articulo_productos span:hover{
+    background-color: #ff654e;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .articulo_productos a img{
@@ -277,12 +323,13 @@ header{
 .productos_texto h3{
     font-family: 'Jost', sans-serif;
 }
+.articulos_main{
+    margin-top: 55px;
+}
 .articulo_productos{
     font-family: 'Jost', cursive;
-    margin: 10px 30px 10px 30px;
+    margin: 0px 30px 10px 30px;
     text-align: center;
-    border-color: rgb(197, 197, 197);
-    padding: 15px;
 }
 .articulo_productos a img{
     border: 2px solid;
@@ -336,6 +383,10 @@ header{
 }
 .olvidaste-crear a{
     color: black;
+    transition: .3s;
+}
+.olvidaste-crear a:hover{
+    color: gray;
 }
 .boton-inicio{
     display: flex;
@@ -350,6 +401,11 @@ header{
     border: 2px solid;
     border-radius: 5px;
     background-color: #FF9584;
+    transition: all 1s;
+}
+.boton-inicio a:hover{
+    background-color: #ff654e;
+
 }
 /**Encabezado Tienda**/
 .variable_shop{
@@ -388,12 +444,12 @@ header{
 /**Recomendado Carrito**/
 .productos_recomendados{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     font-family: 'Jost', sans-serif;
     align-items: center;
     text-align: center;
-    margin-bottom: 50px;
     flex-wrap: wrap;
+    margin: 10px 100px 50px 100px;
 }
 .productos_recomendados a{
     text-decoration: none;
@@ -408,6 +464,13 @@ header{
 .productos_recom_items a img{
     width: 150px;
     height: 150px;
+}
+.productos_recom_items{
+    transition: all 1s;
+}
+.productos_recom_items:hover{
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .textos_arrepentimiento h2{
     text-align: center;
@@ -538,25 +601,22 @@ header{
     background-image: url(../img/background-textgrid.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
+    opacity: 0.7;
+    transition: all 0.5s;
 }
-.frutos1 h2{
-    font-family: 'Dancing Script', cursive;
-    font-size: 25px;
-    color: white;
-    text-shadow: rgba(0, 0, 0, 0.308) 2px 2px 2px;
-}
-.frutos1 p{
-    font-family: 'Jost', sans-serif;
-    padding: 5px 10px 5px 10px;
-    color: white;
-    text-shadow: rgba(124, 124, 124, 0.795) 2px 2px 2px;
+.frutos1:hover{
+    opacity: 1;
 }
 .frutos2{
     grid-area: frutos2;
     background-image: url(../img/grid_frutos2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.frutos2:hover{
+    opacity: 1;
 }
 .frutos3{
     grid-area: frutos3;
@@ -564,6 +624,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.frutos3:hover{
+    opacity: 1;
 }
 .frutos4{
     grid-area: frutos4;
@@ -571,6 +636,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.frutos4:hover{
+    opacity: 1;
 }
 .frutos5{
     grid-area: frutos5;
@@ -578,6 +648,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.frutos5:hover{
+    opacity: 1;
 }
 .frutos6{
     grid-area: frutos6;
@@ -585,6 +660,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.frutos6:hover{
+    opacity: 1;
 }
 .frutos7{
     grid-area: frutos7;
@@ -592,6 +672,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.frutos7:hover{
+    opacity: 1;
 }
 .desayunos{
     height: 400px;
@@ -614,6 +699,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    opacity: 0.7;
+    transition: all 1s;
+}
+.box1:hover{
+    opacity: 1;
 }
 .box2{
     grid-area: box2;
@@ -621,6 +711,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    opacity: 0.7;
+    transition: all 1s;
+}
+.box2:hover{
+    opacity: 1;
 }
 .box3{
     grid-area: box3;
@@ -628,6 +723,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    opacity: 0.7;
+    transition: all 1s;
+}
+.box3:hover{
+    opacity: 1;
 }
 .box4{
     grid-area: box4;
@@ -635,6 +735,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    opacity: 0.7;
+    transition: all 1s;
+}
+.box4:hover{
+    opacity: 1;
 }
 .box5{
     grid-area: box5;
@@ -642,6 +747,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    opacity: 0.7;
+    transition: all 1s;
+}
+.box5:hover{
+    opacity: 1;
 }
 .box6{
     color: white;
@@ -650,6 +760,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 0.7;
+    transition: all 1s;
+}
+.box6:hover{
+    opacity: 1;
 }
 .box6 h2{
     font-family: 'Dancing Script', cursive;
